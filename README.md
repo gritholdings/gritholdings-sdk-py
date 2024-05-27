@@ -18,3 +18,4 @@ $ python3 examples.py
 
 - Visit [documentation](https://gritholdings.gitbook.io/docs)
 - Visit [website](https://www.meetgrit.com)
+- Visit [linkedin](https://www.linkedin.com/company/gritholdings)

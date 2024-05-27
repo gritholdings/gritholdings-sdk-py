@@ -1,5 +1,8 @@
 from .session import Session
 
+__author__ = 'Grit Holdings, Inc'
+__version__ = '1.1.3'
+
 DEFAULT_SESSION = None
 
 
