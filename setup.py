@@ -11,11 +11,6 @@ ROOT = os.path.dirname(__file__)
 VERSION_RE = re.compile(r'''__version__ = ['"]([0-9.]+)['"]''')
 
 
-requires = [
-    'selenium>=4.0.0'
-]
-
-
 def get_version():
     init = open(os.path.join(ROOT, 'gritholdings', '__init__.py')).read()
     return VERSION_RE.search(init).group(1)
@@ -31,7 +26,7 @@ setup(
     scripts=[],
     packages=find_packages(exclude=['tests*']),
     include_package_data=True,
-    install_requires=requires,
+    install_requires=open('requirements.txt').read().split('\n'),
     license="Apache License 2.0",
     python_requires=">= 3.8",
     classifiers=[
