@@ -1,6 +1,7 @@
 from .browser_automation import BrowserAutomation
 from .local_db import LocalDB
 from .llm import LLM
+from .gmail import GmailAPIManager, GmailAPI
 
 
 class Session:
@@ -8,7 +9,9 @@ class Session:
         self._resources = {
             'BrowserAutomation': BrowserAutomation,
             'LocalDB': LocalDB,
-            'LLM': LLM
+            'LLM': LLM,
+            'GmailAPI': GmailAPI,
+            'GmailAPIManager': GmailAPIManager
         }
 
     def resource(self, service_name, **kwargs):
