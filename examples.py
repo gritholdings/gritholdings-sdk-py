@@ -11,3 +11,7 @@ openai_llm = gritholdings.resource('LLM', adapter_type='openai').adapter
 
 # Must have gmail_api_credentials.json with project_id, auth_uri, token_uri, .. added
 # gmail_api = gritholdings.resource('GmailAPI', partner_name='user@example.com')
+
+# task_orchestrator = gritholdings.resource('LLM', adapter_type='task_orchestrator').adapter
+# task_orchestrator_response = task_orchestrator.run('Explain the concept of deep learning.')
+# print(task_orchestrator_response)
