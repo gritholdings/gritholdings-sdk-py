@@ -17,7 +17,7 @@ def get_version():
 
 
 setup(
-    name='gritholdings-sdk-py',
+    name='gritholdings',
     version=get_version(),
     description='The Grit Holdings SDK for Python',
     long_description=open('README.md').read(),
